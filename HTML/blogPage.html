@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Thảo Luận</title>
+
+    <link rel="stylesheet" href="../Frame/bootstrap-3.1.1-dist/css/bootstrap.css"> 
+    <link rel="stylesheet" href="../CSS/trangChu.css">
+
+    <script src="../Frame/js/jquery-3.6.0.min.js"></script>
+    <script src="../Frame/js/bootstrap.min.js"></script>
+
+    <script src="../JavaScript/generalScript.js"></script>
+    <script src="../JavaScript/navbarGenerator.js"></script>
+    <script src="../JavaScript/changeTab/openPhoneTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openSmartPhonePage.js"></script>
+    <script src="../JavaScript/changeTab/openTabletPage.js"></script>
+    <script src="../JavaScript/changeTab/openUserTemplatePage.js"></script>
+    <script src="../JavaScript/changeTab/openBlogPage.js"></script>
+    <script src="../JavaScript/changeTab/openNewsPage.js"></script>
+    <script src="../JavaScript/changeTab/openAboutUsPage.js"></script>
+    <script src="../JavaScript/transferUserData.js"></script>
+</head>
+
+<body>
+    <!-- MAIN -->
+    <script>
+        window.onload = () => {
+            navbarGenerator()
+        }
+    </script>
+
+    <img src="https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?w=2000" alt="">
+    <div class="container-fluid ">
+        <nav>
+
+        </nav>
+
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Các Tip Hướng Dẫn</h2>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="../HTML/blogTemplate.html">
+                            <img src="../Image/Blog/image1.webp" width="100%" alt="image1">
+                    </div>
+                    <div class="col-md-9">
+                        <h3>So sánh sạc nhanh và sạc thường</h3>
+                        </a>
+                        <p>Cáp sạc nhanh và cáp thường có gì khác nhau, tại sao có loại cáp chỉ sạc được 5W, có loại cáp lại sạc được cả 100W?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="" alt="image2" style="background-color: aqua;">
+                    </div>
+                    <div class="col-md-9" style="background-color: aquamarine;">
+                        <h3>Title1</h3>
+                        <p>Content1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="background-color: beige;">
+                <h4>Sản Phẩm Sắp Ra Mắt</h4>
+
+                <img src="../Image/sanPhamSapRaMat/google-pixel-6a.jpg" alt="news" class=col-md-8 " style="width: 60%; ">
+                <p class=col-md-4 >Google Pixel 6A</p>
+            </div>
+        </div>
+        
+        <footer>
+            <span>
+                12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh
+                Điện thoại: (028) 38940390 Fax: (028) 38946268
+            </span>
+        </footer>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" role="dialog" id="modalSignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Nhập</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="signInUserName" class="control-label col-xs-3">Tài Khoản:</label>
+                        <div class="col-xs-9">
+                            <input type="text" name="signInUserName" id="signInUserName" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="signInPassword" class="control-label col-xs-3">Mật Khẩu:</label>
+                        <div class="col-xs-9">
+                            <input type="password" name="signInPassword" id="signInPassword" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignIn">Đăng nhập</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignIn">*</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Nếu chưa có tài khoản thì đăng ký tại
+                                <a href="#" id="btnSignUp">đây</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="modalSignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Đăng Ký Tài Khoản</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="name" class="control-label col-xs-3">Họ tên:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="birthday" class="control-label col-xs-3">Ngày sinh:</label>
+                        <div class="col-xs-6">
+                            <input type="date" name="birthday" id="birthday" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultBirthday">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="phoneNumber" class="control-label col-xs-3">Số điện thoại:</label>
+                        <div class="col-xs-6">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPhoneNumber">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="email" class="control-label col-xs-3">Email:</label>
+                        <div class="col-xs-6">
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultEmail">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="accountName" class="control-label col-xs-3">Tên tài khoản:</label>
+                        <div class="col-xs-6">
+                            <input type="text" name="accountName" id="accountName" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultAccountName">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="password" class="control-label col-xs-3">Mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="checkPassword" class="control-label col-xs-3">Nhập lại mật khẩu:</label>
+                        <div class="col-xs-6">
+                            <input type="password" name="checkPassword" id="checkPassword" class="form-control" required>
+                        </div>
+                        <div class="col-xs-3">
+                            <p id="resultCheckPassword">*</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button id="btnModalSignUp">Sign Up</button>
+                        </div>
+                        <div class="col-xs-9">
+                            <p id="resultSignUp"></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
