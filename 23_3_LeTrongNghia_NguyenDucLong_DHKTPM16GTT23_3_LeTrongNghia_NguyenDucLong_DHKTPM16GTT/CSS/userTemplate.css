@@ -1,0 +1,57 @@
+#moTa>h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 36px;
+  word-spacing: 2px;
+}
+
+footer {
+  color: white;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.container > .row > .col-md-6 > table {
+  width: 100%;
+  background-color: white;
+}
+
+.container > .row > .col-md-6 > table > caption{
+  color: white;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.container > .row > .col-md-6 > table > tbody > tr{
+  border-bottom: 1px solid black;
+}
+
+.container > .row > .col-md-6 > table > tbody > tr > td{
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.container > .row > .col-md-8 > ul {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container > .row > .col-md-8 > ul > li {
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.container > .row > .col-md-8 > ul > li > div {
+  padding: 20px;
+}
+
+.container > .row > .col-md-8 > ul > li > div > div > div {
+  color: black;
+  text-align: left;
+}
+
+.container > .row > .col-md-8 > ul > li > div > div > div > div:first-child {
+  font-weight: bold;
+}

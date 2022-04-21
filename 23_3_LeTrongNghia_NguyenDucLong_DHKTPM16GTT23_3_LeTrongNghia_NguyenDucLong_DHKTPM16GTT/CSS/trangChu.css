@@ -1,0 +1,61 @@
+body>img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.container .row .col-md-4 .content {
+    height: fit-content;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .row .col-md-4 .content img {
+    width: 80%;
+    height: 300px;
+    margin: 5px;
+}
+
+.container .row h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.container .row .col-md-3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.container .row {
+    background-color: azure;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container .row:nth-child(1) {
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.container .row .col-md-3 h3,
+.container .row .col-md-3 p {
+    color: black;
+}
+
+.container .row .col-md-3 a:hover h3,
+.container .row .col-md-3 a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: black;
+}

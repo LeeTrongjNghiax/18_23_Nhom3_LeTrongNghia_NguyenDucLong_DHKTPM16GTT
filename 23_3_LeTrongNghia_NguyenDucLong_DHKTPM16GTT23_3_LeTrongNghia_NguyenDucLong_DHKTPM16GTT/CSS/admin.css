@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+}
+
+body > .container-fluid > .container > .row > .col-md-12 > table {
+  width: 100%;
+}
+
+body > .container-fluid > .container > .row > .col-md-12 > table > caption {
+  font-size: 40px;
+  font-style: italic;
+}
+
+body > .container-fluid > .container > .row > .col-md-12 > table > thead > tr > td{
+  background-color: lightgray;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+body > .container-fluid > .container > .row > .col-md-12 > table > tbody > tr > td {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+body > .container-fluid > .container > .row:last-child > .col-md-12 > table > tbody > tr > td > p {
+  display: none;
+}
+
+body > .container-fluid > .container > .row:last-child > .col-md-12 > table > tbody > tr > td > table {
+  width: 100%;
+  background-color: lightgray;
+  display: none;
+}
+
+body > .container-fluid > .container > .row:last-child > .col-md-12 > table > tbody > tr > td > table > tr {
+  border-bottom: 1px solid gray;
+}
+
+body > .container-fluid > .container > .row:last-child > .col-md-12 > table > tbody > tr > td > table > tr > td{
+  background-color: lightgray;
+  padding: 20px;
+}
