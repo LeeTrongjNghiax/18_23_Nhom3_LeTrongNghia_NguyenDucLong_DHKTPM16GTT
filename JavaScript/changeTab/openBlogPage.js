@@ -7,5 +7,5 @@ openBlogPage = (tag) => {
   sessionStorage.setItem("userArray", JSON.stringify(users))
   sessionStorage.setItem("phoneArray", JSON.stringify(phones))
 
-  window.open("HTML/blogPage.html")
+  window.open("blogPage.html")
 }
