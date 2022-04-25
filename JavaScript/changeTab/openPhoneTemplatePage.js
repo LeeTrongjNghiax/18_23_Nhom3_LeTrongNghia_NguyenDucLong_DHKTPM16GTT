@@ -13,5 +13,5 @@ openPhoneTemplatePage = (tag) => {
   sessionStorage.setItem("userArray", JSON.stringify(users))
   sessionStorage.setItem("phoneArray", JSON.stringify(phones))
 
-  window.open("HTML/phoneTemplate.html")
+  window.open("phoneTemplate.html")
 }
