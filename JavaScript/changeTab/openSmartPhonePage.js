@@ -7,5 +7,5 @@ openSmartPhonePage = (tag) => {
   sessionStorage.setItem("userArray", JSON.stringify(users))
   sessionStorage.setItem("phoneArray", JSON.stringify(phones))
 
-  window.open("HTML/smartPhonePage.html")
+  window.open("smartPhonePage.html")
 }
