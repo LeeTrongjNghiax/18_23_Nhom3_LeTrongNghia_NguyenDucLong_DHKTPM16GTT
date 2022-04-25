@@ -7,5 +7,5 @@ openNewsPage = (tag) => {
   sessionStorage.setItem("userArray", JSON.stringify(users))
   sessionStorage.setItem("phoneArray", JSON.stringify(phones))
 
-  window.open("HTML/newsPage.html")
+  window.open("newsPage.html")
 }
