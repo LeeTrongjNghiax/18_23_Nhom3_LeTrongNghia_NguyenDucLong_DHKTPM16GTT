@@ -38,7 +38,7 @@ navbarGenerator = () => {
     // body > .container-fluid > nav > div > div.navbar-header > a
 
     document.querySelector("body > .container-fluid > nav > div > div.navbar-header > a").setAttribute("class", "navbar-brand")
-    document.querySelector("body > .container-fluid > nav > div > div.navbar-header > a").setAttribute("href", "trangChuPage.html")
+    document.querySelector("body > .container-fluid > nav > div > div.navbar-header > a").setAttribute("href", "index.html")
     document.querySelector("body > .container-fluid > nav > div > div.navbar-header > a").appendChild(document.createElement("img"))
 
     // body > .container-fluid > nav > div > div.navbar-header > a > img
